@@ -1,0 +1,85 @@
+# 📚 Django Bookstore Project
+
+This is a simple Django web application for managing and displaying a list of books. The project demonstrates core Django concepts like models, templates, views, URL routing, admin panel usage, and database interaction.
+
+---
+
+## 🚀 Features
+
+- Home page displaying all books
+- Admin panel to add/update/delete books
+- Book model with fields: `title`, `author`, `price`
+- Clean template structure for future expansion
+
+---
+
+## 📂 Project Structure
+
+bookstore/
+├── bookstore/ # Django project settings
+├── store/ # Django app with models, views, templates
+├── templates/ # HTML templates
+├── db.sqlite3 # SQLite database
+├── manage.py # Django project manager
+├── venv/ # Virtual environment (excluded from Git)
+└── .gitignore # Git ignore file
+
+yaml
+Copy code
+
+---
+
+## ⚙️ Tech Stack
+
+- Python 3.10+
+- Django 5.x
+- SQLite (default database)
+- HTML (for templates)
+
+---
+
+## 🛠️ Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/<your-username>/django-bookstore.git
+   cd django-bookstore
+Create a virtual environment
+
+bash
+Copy code
+python -m venv venv
+venv\Scripts\activate
+Install dependencies
+
+bash
+Copy code
+pip install django
+Run migrations
+
+bash
+Copy code
+python manage.py makemigrations
+python manage.py migrate
+Create a superuser (admin login)
+
+bash
+Copy code
+python manage.py createsuperuser
+Start development server
+
+bash
+Copy code
+python manage.py runserver
+Visit in browser
+
+cpp
+Copy code
+http://127.0.0.1:8000/       → Home Page
+http://127.0.0.1:8000/admin/ → Admin Panel
+✨ Screenshots
+Home Page	Admin Panel
+📘 Displays book list	🔐 Add/edit books from dashboard
+
+📄 License
+This project is for educational/demo purposes only. No license.
